@@ -17,6 +17,6 @@ app.set('view engine', 'hbs'); // Sử dụng hbs làm view engine
 const toys_Route = require('./routes/toys');
 app.use('/', toys_Route);
 
-app.listen(process.env.POST || 3000, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log("Your app running on port 3000");
 })
